@@ -17,14 +17,14 @@
 
 5) Set the root password
 
-	# mysqld_safe --skip-grant-tables &
-	# mysql
+	# systemctl start mariadb 
+	# mysql -u root
 
 		mysql> use mysql;
 		mysql> UPDATE user SET password=PASSWORD("root") WHERE User='root';
 		mysql> FLUSH PRIVILEGES;
 		mysql>  quit
-	# systemctl start mariadb
+	# systemctl restart mariadb
 
 6) create Students table
 
