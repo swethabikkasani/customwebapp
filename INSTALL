@@ -1,8 +1,11 @@
 1) Install Tomcat (Source)
 
-2) Copy the jar file in lib directory   <tomcatc source>/lib
+2) Downlaod the jar file in lib directory   <tomcatc source>/lib
 
-	https://github.com/versionit/customwebapp/blob/master/mysql-connector-java-5.1.40.jar
+	wget https://github.com/versionit/customwebapp/blob/master/mysql-connector-java-5.1.40.jar?raw=true -O mysql-connector-java-5.1.40.jar
+	
+  Download student.war file in webapps directory <tomcat source>/webapps
+        wget https://github.com/versionit/customwebapp/blob/master/student.war?raw=true -O student.war
 
 3) Update <tomcat source>conf/context.xml 
 
