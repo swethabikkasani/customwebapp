@@ -41,7 +41,7 @@ table#nat{
 	<td><%= Persent %></td>
 </tr>
 <tr>
-	<td>Year of Passout</td>
+	<td>Year of  Passout</td>
 	<td><%= Year %></td>
 </tr>
 </table>
