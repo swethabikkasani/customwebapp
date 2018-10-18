@@ -21,7 +21,7 @@ table#nat{
 	String Year = request.getParameter("yop"); %>
 <table id ="nat">
 <tr>
-	<td>Full Name</td>
+	<td>Student Name</td>
 	<td><%= name %></td>
 </tr>
 <tr>
