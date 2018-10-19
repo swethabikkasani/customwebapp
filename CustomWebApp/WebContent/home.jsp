@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Student Data Display</title>
+<title>Student Data</title>
 <style>
 table#nat{
 	width: 50%;
@@ -13,36 +13,26 @@ table#nat{
 </style>
 </head>
 <body>  
-<% String name =  request.getParameter("fullname");
-	String Addr = request.getParameter("address");
-	String age = request.getParameter("age");
-	String Qual = request.getParameter("qual");
-	String Persent = request.getParameter("percent");
-	String Year = request.getParameter("yop"); %>
+<% String id =  request.getParameter("id");
+	String fname = request.getParameter("firstname");
+	String lname = request.getParameter("lastname");
+	String email = request.getParameter("email"); %>
 <table id ="nat">
 <tr>
-	<td>Student Name</td>
-	<td><%= name %></td>
+	<td>Student ID</td>
+	<td><%= id %></td>
 </tr>
 <tr>
-	<td>Address</td>
-	<td><%= Addr %></td>
+	<td>First Name</td>
+	<td><%= fname %></td>
 </tr>
 <tr>
-	<td>Age</td>
-	<td><%= age %></td>
+	<td>Last Name</td>
+	<td><%= lname %></td>
 </tr>
 <tr>
-	<td>Qualification</td>
-	<td><%= Qual %></td>
-</tr>
-<tr>
-	<td>Percentage</td>
-	<td><%= Persent %></td>
-</tr>
-<tr>
-	<td>Year of  Passout</td>
-	<td><%= Year %></td>
+	<td>Email</td>
+	<td><%= email %></td>
 </tr>
 </table>
 </body>
