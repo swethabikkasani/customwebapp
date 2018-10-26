@@ -22,15 +22,7 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
-      </plugin>
-      <plugin>
-            <groupId>org.jboss.as.plugins</groupId>
-            <artifactId>jboss-as-maven-plugin</artifactId>
-            <configuration>
-                <filename>${artifactId}-${project.version}.war</filename>
-                <port>8080</port> <!-- you change it following what you have on your server config -->
-            </configuration>
-        </plugin>
+      </plugin>      
     </plugins>
   </build>
   <dependencies>
